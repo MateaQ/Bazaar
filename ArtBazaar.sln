@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtBazaar", "ArtBazaar\ArtBazaar.csproj", "{F19A1BEE-9D9A-46F3-A1C2-4D061985CAA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F19A1BEE-9D9A-46F3-A1C2-4D061985CAA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F19A1BEE-9D9A-46F3-A1C2-4D061985CAA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F19A1BEE-9D9A-46F3-A1C2-4D061985CAA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F19A1BEE-9D9A-46F3-A1C2-4D061985CAA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28946678-E39B-4F76-B9D9-74E7A2F7D220}
+	EndGlobalSection
+EndGlobal
