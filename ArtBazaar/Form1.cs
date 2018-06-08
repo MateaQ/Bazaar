@@ -17,17 +17,19 @@ namespace ArtBazaar
 			InitializeComponent();
 		}
 
-		private void pictureBox1_Click(object sender, EventArgs e)
+		private void PictureBox1_Click(object sender, EventArgs e)
 		{
 
 		}
 
-		private void button2_Click(object sender, EventArgs e)
+		private void Button2_Click(object sender, EventArgs e)
 		{
-
+			Form3 f3 = new Form3();
+			f3.Show();
+			this.Hide();
 		}
 
-		private void button1_Click(object sender, EventArgs e)
+		private void Button1_Click(object sender, EventArgs e)
 		{
 			Form2 f2 = new Form2();
 			f2.Show();

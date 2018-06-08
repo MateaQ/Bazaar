@@ -20,9 +20,9 @@ namespace ArtBazaar {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("Database1DataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("Database1DataSet1")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class Database1DataSet : global::System.Data.DataSet {
+    public partial class Database1DataSet1 : global::System.Data.DataSet {
         
         private SlikaDataTable tableSlika;
         
@@ -30,7 +30,7 @@ namespace ArtBazaar {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public Database1DataSet() {
+        public Database1DataSet1() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace ArtBazaar {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        protected Database1DataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected Database1DataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace ArtBazaar {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            Database1DataSet cln = ((Database1DataSet)(base.Clone()));
+            Database1DataSet1 cln = ((Database1DataSet1)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace ArtBazaar {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "Database1DataSet";
+            this.DataSetName = "Database1DataSet1";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/Database1DataSet.xsd";
+            this.Namespace = "http://tempuri.org/Database1DataSet1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableSlika = new SlikaDataTable();
@@ -225,7 +225,7 @@ namespace ArtBazaar {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            Database1DataSet ds = new Database1DataSet();
+            Database1DataSet1 ds = new Database1DataSet1();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -292,10 +292,6 @@ namespace ArtBazaar {
             private global::System.Data.DataColumn columnTehnika;
             
             private global::System.Data.DataColumn columnMotiv;
-            
-            private global::System.Data.DataColumn columnŠifra_artikla;
-            
-            private global::System.Data.DataColumn columnDatum_objave;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
@@ -388,22 +384,6 @@ namespace ArtBazaar {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn Šifra_artiklaColumn {
-                get {
-                    return this.columnŠifra_artikla;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn Datum_objaveColumn {
-                get {
-                    return this.columnDatum_objave;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -439,7 +419,7 @@ namespace ArtBazaar {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public SlikaRow AddSlikaRow(byte[] Slika, string Naziv, int Godina, string Opis, decimal Cijena, string Tehnika, string Motiv, int Šifra_artikla, System.DateTime Datum_objave) {
+            public SlikaRow AddSlikaRow(byte[] Slika, string Naziv, int Godina, string Opis, decimal Cijena, string Tehnika, string Motiv) {
                 SlikaRow rowSlikaRow = ((SlikaRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Slika,
@@ -448,9 +428,7 @@ namespace ArtBazaar {
                         Opis,
                         Cijena,
                         Tehnika,
-                        Motiv,
-                        Šifra_artikla,
-                        Datum_objave};
+                        Motiv};
                 rowSlikaRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowSlikaRow);
                 return rowSlikaRow;
@@ -480,8 +458,6 @@ namespace ArtBazaar {
                 this.columnCijena = base.Columns["Cijena"];
                 this.columnTehnika = base.Columns["Tehnika"];
                 this.columnMotiv = base.Columns["Motiv"];
-                this.columnŠifra_artikla = base.Columns["Šifra_artikla"];
-                this.columnDatum_objave = base.Columns["Datum_objave"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -501,10 +477,6 @@ namespace ArtBazaar {
                 base.Columns.Add(this.columnTehnika);
                 this.columnMotiv = new global::System.Data.DataColumn("Motiv", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMotiv);
-                this.columnŠifra_artikla = new global::System.Data.DataColumn("Šifra_artikla", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnŠifra_artikla);
-                this.columnDatum_objave = new global::System.Data.DataColumn("Datum_objave", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnDatum_objave);
                 this.columnNaziv.AllowDBNull = false;
                 this.columnNaziv.MaxLength = 2147483647;
                 this.columnGodina.AllowDBNull = false;
@@ -581,7 +553,7 @@ namespace ArtBazaar {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Database1DataSet ds = new Database1DataSet();
+                Database1DataSet1 ds = new Database1DataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -743,38 +715,6 @@ namespace ArtBazaar {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public int Šifra_artikla {
-                get {
-                    try {
-                        return ((int)(this[this.tableSlika.Šifra_artiklaColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Šifra_artikla\' in table \'Slika\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSlika.Šifra_artiklaColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public System.DateTime Datum_objave {
-                get {
-                    try {
-                        return ((global::System.DateTime)(this[this.tableSlika.Datum_objaveColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Datum_objave\' in table \'Slika\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSlika.Datum_objaveColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool IsSlikaNull() {
                 return this.IsNull(this.tableSlika.SlikaColumn);
             }
@@ -795,30 +735,6 @@ namespace ArtBazaar {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void SetOpisNull() {
                 this[this.tableSlika.OpisColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsŠifra_artiklaNull() {
-                return this.IsNull(this.tableSlika.Šifra_artiklaColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetŠifra_artiklaNull() {
-                this[this.tableSlika.Šifra_artiklaColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsDatum_objaveNull() {
-                return this.IsNull(this.tableSlika.Datum_objaveColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetDatum_objaveNull() {
-                this[this.tableSlika.Datum_objaveColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -857,7 +773,7 @@ namespace ArtBazaar {
         }
     }
 }
-namespace ArtBazaar.Database1DataSetTableAdapters {
+namespace ArtBazaar.Database1DataSet1TableAdapters {
     
     
     /// <summary>
@@ -988,14 +904,11 @@ namespace ArtBazaar.Database1DataSetTableAdapters {
             tableMapping.ColumnMappings.Add("Cijena", "Cijena");
             tableMapping.ColumnMappings.Add("Tehnika", "Tehnika");
             tableMapping.ColumnMappings.Add("Motiv", "Motiv");
-            tableMapping.ColumnMappings.Add("Šifra_artikla", "Šifra_artikla");
-            tableMapping.ColumnMappings.Add("Datum_objave", "Datum_objave");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Slika] ([Slika], [Naziv], [Godina], [Opis], [Cijena], [Tehnika" +
-                "], [Motiv], [Šifra_artikla], [Datum_objave]) VALUES (@Slika, @Naziv, @Godina, @O" +
-                "pis, @Cijena, @Tehnika, @Motiv, @Šifra_artikla, @Datum_objave)";
+                "], [Motiv]) VALUES (@Slika, @Naziv, @Godina, @Opis, @Cijena, @Tehnika, @Motiv)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Slika", global::System.Data.SqlDbType.Image, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Slika", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Naziv", global::System.Data.SqlDbType.Text, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Naziv", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -1004,8 +917,6 @@ namespace ArtBazaar.Database1DataSetTableAdapters {
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cijena", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cijena", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Tehnika", global::System.Data.SqlDbType.Text, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Tehnika", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Motiv", global::System.Data.SqlDbType.Text, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Motiv", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Šifra_artikla", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Šifra_artikla", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Datum_objave", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Datum_objave", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1021,8 +932,7 @@ namespace ArtBazaar.Database1DataSetTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Slika, Naziv, Godina, Opis, Cijena, Tehnika, Motiv, Šifra_artikla, Datum_o" +
-                "bjave FROM dbo.Slika";
+            this._commandCollection[0].CommandText = "SELECT Slika, Naziv, Godina, Opis, Cijena, Tehnika, Motiv FROM dbo.Slika";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1030,7 +940,7 @@ namespace ArtBazaar.Database1DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Database1DataSet.SlikaDataTable dataTable) {
+        public virtual int Fill(Database1DataSet1.SlikaDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1043,9 +953,9 @@ namespace ArtBazaar.Database1DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Database1DataSet.SlikaDataTable GetData() {
+        public virtual Database1DataSet1.SlikaDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Database1DataSet.SlikaDataTable dataTable = new Database1DataSet.SlikaDataTable();
+            Database1DataSet1.SlikaDataTable dataTable = new Database1DataSet1.SlikaDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1053,14 +963,14 @@ namespace ArtBazaar.Database1DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Database1DataSet.SlikaDataTable dataTable) {
+        public virtual int Update(Database1DataSet1.SlikaDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Database1DataSet dataSet) {
+        public virtual int Update(Database1DataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "Slika");
         }
         
@@ -1083,7 +993,7 @@ namespace ArtBazaar.Database1DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(byte[] Slika, string Naziv, int Godina, string Opis, decimal Cijena, string Tehnika, string Motiv, global::System.Nullable<int> Šifra_artikla, global::System.Nullable<global::System.DateTime> Datum_objave) {
+        public virtual int Insert(byte[] Slika, string Naziv, int Godina, string Opis, decimal Cijena, string Tehnika, string Motiv) {
             if ((Slika == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -1115,18 +1025,6 @@ namespace ArtBazaar.Database1DataSetTableAdapters {
             }
             else {
                 this.Adapter.InsertCommand.Parameters[6].Value = ((string)(Motiv));
-            }
-            if ((Šifra_artikla.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[7].Value = ((int)(Šifra_artikla.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
-            }
-            if ((Datum_objave.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[8].Value = ((System.DateTime)(Datum_objave.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1236,7 +1134,7 @@ namespace ArtBazaar.Database1DataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateUpdatedRows(Database1DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(Database1DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._slikaTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Slika.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -1255,7 +1153,7 @@ namespace ArtBazaar.Database1DataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateInsertedRows(Database1DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(Database1DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._slikaTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Slika.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -1273,7 +1171,7 @@ namespace ArtBazaar.Database1DataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateDeletedRows(Database1DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(Database1DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._slikaTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.Slika.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -1315,7 +1213,7 @@ namespace ArtBazaar.Database1DataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public virtual int UpdateAll(Database1DataSet dataSet) {
+        public virtual int UpdateAll(Database1DataSet1 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

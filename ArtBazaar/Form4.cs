@@ -22,12 +22,14 @@ namespace ArtBazaar
 
 		}
 
-		private void button2_Click(object sender, EventArgs e)
+		private void Button2_Click(object sender, EventArgs e)
 		{
-
+			Form1 f1 = new Form1();
+			f1.Show();
+			this.Hide();
 		}
 
-		private void button4_Click(object sender, EventArgs e)
+		private void Button4_Click(object sender, EventArgs e)
 		{
 			Form6 f6 = new Form6();
 			f6.Show();
@@ -35,9 +37,19 @@ namespace ArtBazaar
 
 		}
 
-		private void button3_Click(object sender, EventArgs e)
+		private void Button3_Click(object sender, EventArgs e)
 		{
 			
+		}
+
+		private void Button1_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void Button6_Click(object sender, EventArgs e)
+		{
+
 		}
 	}
 }

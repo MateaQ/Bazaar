@@ -29,70 +29,72 @@
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
-			this.button2 = new System.Windows.Forms.Button();
-			this.button1 = new System.Windows.Forms.Button();
-			this.button4 = new System.Windows.Forms.Button();
-			this.button5 = new System.Windows.Forms.Button();
-			this.button6 = new System.Windows.Forms.Button();
+			this.Button2 = new System.Windows.Forms.Button();
+			this.Button1 = new System.Windows.Forms.Button();
+			this.Button4 = new System.Windows.Forms.Button();
+			this.Button5 = new System.Windows.Forms.Button();
+			this.Button6 = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
-			// button2
+			// Button2
 			// 
-			this.button2.BackColor = System.Drawing.Color.DarkSalmon;
-			this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-			this.button2.Location = new System.Drawing.Point(574, 14);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(104, 38);
-			this.button2.TabIndex = 27;
-			this.button2.Text = "Odjava";
-			this.button2.UseVisualStyleBackColor = false;
-			this.button2.Click += new System.EventHandler(this.button2_Click);
+			this.Button2.BackColor = System.Drawing.Color.DarkSalmon;
+			this.Button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+			this.Button2.Location = new System.Drawing.Point(574, 14);
+			this.Button2.Name = "Button2";
+			this.Button2.Size = new System.Drawing.Size(104, 38);
+			this.Button2.TabIndex = 27;
+			this.Button2.Text = "Odjava";
+			this.Button2.UseVisualStyleBackColor = false;
+			this.Button2.Click += new System.EventHandler(this.Button2_Click);
 			// 
-			// button1
+			// Button1
 			// 
-			this.button1.BackColor = System.Drawing.Color.DarkSalmon;
-			this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-			this.button1.Location = new System.Drawing.Point(439, 13);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(104, 40);
-			this.button1.TabIndex = 26;
-			this.button1.Text = "Profil";
-			this.button1.UseVisualStyleBackColor = false;
+			this.Button1.BackColor = System.Drawing.Color.DarkSalmon;
+			this.Button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+			this.Button1.Location = new System.Drawing.Point(439, 13);
+			this.Button1.Name = "Button1";
+			this.Button1.Size = new System.Drawing.Size(104, 40);
+			this.Button1.TabIndex = 26;
+			this.Button1.Text = "Profil";
+			this.Button1.UseVisualStyleBackColor = false;
+			this.Button1.Click += new System.EventHandler(this.Button1_Click);
 			// 
-			// button4
+			// Button4
 			// 
-			this.button4.BackColor = System.Drawing.SystemColors.Control;
-			this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-			this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-			this.button4.Location = new System.Drawing.Point(332, 60);
-			this.button4.Name = "button4";
-			this.button4.Size = new System.Drawing.Size(273, 271);
-			this.button4.TabIndex = 29;
-			this.button4.UseVisualStyleBackColor = false;
-			this.button4.Click += new System.EventHandler(this.button4_Click);
+			this.Button4.BackColor = System.Drawing.SystemColors.Control;
+			this.Button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Button4.BackgroundImage")));
+			this.Button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+			this.Button4.Location = new System.Drawing.Point(332, 60);
+			this.Button4.Name = "Button4";
+			this.Button4.Size = new System.Drawing.Size(273, 271);
+			this.Button4.TabIndex = 29;
+			this.Button4.UseVisualStyleBackColor = false;
+			this.Button4.Click += new System.EventHandler(this.Button4_Click);
 			// 
-			// button5
+			// Button5
 			// 
-			this.button5.BackColor = System.Drawing.SystemColors.Control;
-			this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-			this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-			this.button5.Location = new System.Drawing.Point(12, 23);
-			this.button5.Name = "button5";
-			this.button5.Size = new System.Drawing.Size(323, 308);
-			this.button5.TabIndex = 30;
-			this.button5.UseVisualStyleBackColor = false;
-			this.button5.UseWaitCursor = true;
+			this.Button5.BackColor = System.Drawing.SystemColors.Control;
+			this.Button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Button5.BackgroundImage")));
+			this.Button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+			this.Button5.Location = new System.Drawing.Point(12, 23);
+			this.Button5.Name = "Button5";
+			this.Button5.Size = new System.Drawing.Size(323, 308);
+			this.Button5.TabIndex = 30;
+			this.Button5.UseVisualStyleBackColor = false;
+			this.Button5.UseWaitCursor = true;
 			// 
-			// button6
+			// Button6
 			// 
-			this.button6.BackColor = System.Drawing.SystemColors.Control;
-			this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
-			this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-			this.button6.Location = new System.Drawing.Point(114, 337);
-			this.button6.Name = "button6";
-			this.button6.Size = new System.Drawing.Size(364, 203);
-			this.button6.TabIndex = 31;
-			this.button6.UseVisualStyleBackColor = false;
+			this.Button6.BackColor = System.Drawing.SystemColors.Control;
+			this.Button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Button6.BackgroundImage")));
+			this.Button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+			this.Button6.Location = new System.Drawing.Point(114, 337);
+			this.Button6.Name = "Button6";
+			this.Button6.Size = new System.Drawing.Size(364, 203);
+			this.Button6.TabIndex = 31;
+			this.Button6.UseVisualStyleBackColor = false;
+			this.Button6.Click += new System.EventHandler(this.Button6_Click);
 			// 
 			// Form4
 			// 
@@ -101,11 +103,11 @@
 			this.BackColor = System.Drawing.Color.GhostWhite;
 			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
 			this.ClientSize = new System.Drawing.Size(682, 548);
-			this.Controls.Add(this.button6);
-			this.Controls.Add(this.button5);
-			this.Controls.Add(this.button4);
-			this.Controls.Add(this.button2);
-			this.Controls.Add(this.button1);
+			this.Controls.Add(this.Button6);
+			this.Controls.Add(this.Button5);
+			this.Controls.Add(this.Button4);
+			this.Controls.Add(this.Button2);
+			this.Controls.Add(this.Button1);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "Form4";
 			this.Text = "ArtBazaar";
@@ -116,10 +118,10 @@
 
 		#endregion
 
-		private System.Windows.Forms.Button button2;
-		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.Button button4;
-		private System.Windows.Forms.Button button5;
-		private System.Windows.Forms.Button button6;
+		private System.Windows.Forms.Button Button2;
+		private System.Windows.Forms.Button Button1;
+		private System.Windows.Forms.Button Button4;
+		private System.Windows.Forms.Button Button5;
+		private System.Windows.Forms.Button Button6;
 	}
 }

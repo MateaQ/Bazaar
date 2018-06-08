@@ -8,7 +8,7 @@
 		{
 		}
 
-		partial class DijeloDataTable
+		partial class SlikaDataTable
 		{
 		}
 	}
