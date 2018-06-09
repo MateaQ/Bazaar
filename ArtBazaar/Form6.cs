@@ -39,7 +39,7 @@ namespace ArtBazaar
 
 
 
-		private void Form6_Load(object sender, EventArgs e)
+		public void Form6_Load(object sender, EventArgs e)
 		{
 			// TODO: This line of code loads data into the 'database1DataSet1.Slika' table. You can move, or remove it, as needed.
 			this.slikaTableAdapter1.Fill(this.database1DataSet1.Slika);
@@ -66,7 +66,7 @@ namespace ArtBazaar
 		}
 
 #pragma warning disable IDE1006 // Naming Styles
-		private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+		public void listView1_SelectedIndexChanged(object sender, EventArgs e)
 #pragma warning restore IDE1006 // Naming Styles
 
 		{
@@ -136,8 +136,13 @@ DataGridViewImageColumn Slika = new DataGridViewImageColumn();
 
 		}
 
-		private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		public  void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
 		{
+			int index = e.RowIndex;
+			DataGridViewRow selected_row = dataGridView1.Rows[index];
+
+
+
 			Image Slika = (Image)dataGridView1.SelectedRows[0].Cells["Slika"].Value;
 			string naziv = dataGridView1.SelectedRows[0].Cells["naziv"].Value.ToString();
 

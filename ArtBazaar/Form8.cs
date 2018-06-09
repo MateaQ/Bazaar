@@ -15,6 +15,9 @@ namespace ArtBazaar
 		public Form8()
 		{
 			InitializeComponent();
+
+			
+
 		}
 
 		private void Button1_Click(object sender, EventArgs e)
@@ -25,6 +28,11 @@ namespace ArtBazaar
 		private void Button3_Click(object sender, EventArgs e)
 		{
 
+		}
+
+		private void Form8_Load(object sender, EventArgs e)
+		{
+			
 		}
 	}
 }

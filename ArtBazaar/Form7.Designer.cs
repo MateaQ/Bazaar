@@ -741,6 +741,7 @@
 			this.Controls.Add(this.Button3);
 			this.Name = "Form7";
 			this.Text = "Form7";
+			this.Load += new System.EventHandler(this.Form7_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
