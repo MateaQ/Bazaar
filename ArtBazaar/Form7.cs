@@ -34,7 +34,7 @@ namespace ArtBazaar
 
 		public  void Button3_Click(object sender, EventArgs e)
 		{
-
+			
 			
 
 			string str = "insert into Korisnički_podaci (Broj_kartice,Ime,Prezime,Adresa,Grad) Values ('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "','" + comboBox1.Text + "')";
@@ -42,10 +42,7 @@ namespace ArtBazaar
 			SqlCommand cmd = new SqlCommand(str, con);
 			cmd.ExecuteNonQuery();
 
-			MessageBox.Show("Hvala na kupnji!");
-
-
-
+			
 
 
 
