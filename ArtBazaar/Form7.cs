@@ -42,9 +42,9 @@ namespace ArtBazaar
 			SqlCommand cmd = new SqlCommand(str, con);
 			cmd.ExecuteNonQuery();
 
-			
 
 
+			MessageBox.Show("Unos uspješno spremljen");
 
 
 
