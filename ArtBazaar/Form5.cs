@@ -96,6 +96,7 @@ namespace ArtBazaar
 			MessageBox.Show( "Unos uspješno spremljen");
 
 
+
 			Form6 f6 = new Form6();
 			f6.Show();
 			this.Hide();

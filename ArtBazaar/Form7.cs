@@ -18,6 +18,11 @@ namespace ArtBazaar
 
 		SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Matea\Source\Repos\Bazaar2\ArtBazaar\Database1.mdf;Integrated Security = True");
 		public object DataGridView1;
+		public int datagridview1;
+
+
+		public Slika Slika1  { get; set; }
+		public static object Global { get; private set; }
 
 		public Form7()
 		{
@@ -27,18 +32,27 @@ namespace ArtBazaar
 		}
 
 
-		public void Button3_Click(object sender, EventArgs e)
+		public  void Button3_Click(object sender, EventArgs e)
 		{
+
+			
 
 			string str = "insert into Korisnički_podaci (Broj_kartice,Ime,Prezime,Adresa,Grad) Values ('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "','" + comboBox1.Text + "')";
 			con.Open();
 			SqlCommand cmd = new SqlCommand(str, con);
 			cmd.ExecuteNonQuery();
+
+			MessageBox.Show("Hvala na kupnji!");
+
+
+
+
+
+
+
+
 			con.Close();
 
-			MessageBox.Show("Kupnja slike je uspješno obavljena");
-
-		
 
 		}
 		private string NewMethod1()
@@ -57,5 +71,14 @@ namespace ArtBazaar
 		{
 
 		}
+		public static void DeleteRow(string Slika, string columnName, string IDNumber)
+		{
+		
+		}
 	}
+
+
+
+
 }
+

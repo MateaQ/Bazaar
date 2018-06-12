@@ -193,11 +193,11 @@ namespace ArtBazaar
 			this.label10.AutoSize = true;
 			this.label10.BackColor = System.Drawing.Color.LavenderBlush;
 			this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-			this.label10.Location = new System.Drawing.Point(65, 404);
+			this.label10.Location = new System.Drawing.Point(27, 399);
 			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(70, 25);
+			this.label10.Size = new System.Drawing.Size(123, 25);
 			this.label10.TabIndex = 45;
-			this.label10.Text = "Motiv:";
+			this.label10.Text = "Motiv/vrsta:";
 			this.label10.Click += new System.EventHandler(this.Label10_Click);
 			// 
 			// Button3

@@ -119,9 +119,10 @@
 			// dataGridView1
 			// 
 			this.dataGridView1.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
+			this.dataGridView1.AllowUserToDeleteRows = false;
 			this.dataGridView1.AutoGenerateColumns = false;
 			this.dataGridView1.BackgroundColor = System.Drawing.Color.Bisque;
-			this.dataGridView1.ColumnHeadersHeight = 25;
+			this.dataGridView1.ColumnHeadersHeight = 50;
 			this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.slikaDataGridViewImageColumn,
             this.nazivDataGridViewTextBoxColumn,
@@ -132,12 +133,14 @@
             this.tehnikaDataGridViewTextBoxColumn});
 			this.dataGridView1.DataSource = this.slikaBindingSource1;
 			this.dataGridView1.GridColor = System.Drawing.Color.PeachPuff;
-			this.dataGridView1.Location = new System.Drawing.Point(1, 79);
+			this.dataGridView1.Location = new System.Drawing.Point(12, 70);
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.RowTemplate.Height = 150;
 			this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.dataGridView1.Size = new System.Drawing.Size(731, 485);
+			this.dataGridView1.Size = new System.Drawing.Size(793, 485);
 			this.dataGridView1.TabIndex = 28;
+			this.dataGridView1.VirtualMode = true;
+			this.dataGridView1.AllowUserToDeleteRowsChanged += new System.EventHandler(this.Button3_Click);
 			this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
 			this.dataGridView1.Click += new System.EventHandler(this.BindingSource1_CurrentChanged);
 			this.dataGridView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.DataGridView1_MouseDoubleClick);
@@ -145,10 +148,11 @@
 			// slikaDataGridViewImageColumn
 			// 
 			this.slikaDataGridViewImageColumn.DataPropertyName = "Slika";
-			this.slikaDataGridViewImageColumn.FillWeight = 110F;
+			this.slikaDataGridViewImageColumn.FillWeight = 200F;
 			this.slikaDataGridViewImageColumn.HeaderText = "Slika";
 			this.slikaDataGridViewImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
 			this.slikaDataGridViewImageColumn.Name = "slikaDataGridViewImageColumn";
+			this.slikaDataGridViewImageColumn.Width = 150;
 			// 
 			// nazivDataGridViewTextBoxColumn
 			// 
@@ -217,7 +221,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-			this.ClientSize = new System.Drawing.Size(732, 496);
+			this.ClientSize = new System.Drawing.Size(834, 496);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.textBox1);
 			this.Controls.Add(this.dataGridView1);
@@ -250,8 +254,9 @@
 		private Database1DataSet1 database1DataSet1;
 		private System.Windows.Forms.BindingSource slikaBindingSource1;
 		private Database1DataSet1TableAdapters.SlikaTableAdapter slikaTableAdapter1;
-		private System.Windows.Forms.DataGridView dataGridView1;
 		private System.Windows.Forms.BindingSource dataSet11BindingSource;
+		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.DataGridViewImageColumn slikaDataGridViewImageColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn nazivDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Godina;
@@ -259,7 +264,6 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn cijenaDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Motiv;
 		private System.Windows.Forms.DataGridViewTextBoxColumn tehnikaDataGridViewTextBoxColumn;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.Label label1;
+		public System.Windows.Forms.DataGridView dataGridView1;
 	}
 }

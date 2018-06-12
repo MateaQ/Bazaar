@@ -51,5 +51,12 @@ namespace ArtBazaar
 		{
 
 		}
+
+		private void Button1_Click_1(object sender, EventArgs e)
+		{
+			Form8 f8 = new Form8();
+			f8.Show();
+			this.Hide();
+		}
 	}
 }

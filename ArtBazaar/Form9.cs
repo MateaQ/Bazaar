@@ -24,7 +24,6 @@ namespace ArtBazaar
 		{
 			InitializeComponent();
 
-			pictureBox1.Image = Slika;
 			textBox1.Text = naziv;
 			textBox2.Text = godina;
 			textBox3.Text = opis;
@@ -101,8 +100,8 @@ namespace ArtBazaar
 
 		private void Button2_Click_1(object sender, EventArgs e)
 		{
-			Form6 f6 = new Form6();
-			f6.Show();
+			Form4 f4 = new Form4();
+			f4.Show();
 			this.Hide();
 		}
 

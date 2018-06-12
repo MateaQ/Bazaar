@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form7));
 			this.comboBox1 = new System.Windows.Forms.ComboBox();
 			this.label9 = new System.Windows.Forms.Label();
 			this.textBox4 = new System.Windows.Forms.TextBox();
@@ -618,7 +619,7 @@
             "Štrigova",
             "Vratišinec",
             "Zagreb"});
-			this.comboBox1.Location = new System.Drawing.Point(197, 251);
+			this.comboBox1.Location = new System.Drawing.Point(260, 246);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(193, 21);
 			this.comboBox1.TabIndex = 80;
@@ -627,9 +628,9 @@
 			// label9
 			// 
 			this.label9.AutoSize = true;
-			this.label9.BackColor = System.Drawing.Color.LavenderBlush;
+			this.label9.BackColor = System.Drawing.Color.LightBlue;
 			this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-			this.label9.Location = new System.Drawing.Point(103, 251);
+			this.label9.Location = new System.Drawing.Point(166, 246);
 			this.label9.Name = "label9";
 			this.label9.Size = new System.Drawing.Size(65, 25);
 			this.label9.TabIndex = 79;
@@ -638,7 +639,7 @@
 			// textBox4
 			// 
 			this.textBox4.BackColor = System.Drawing.Color.BlanchedAlmond;
-			this.textBox4.Location = new System.Drawing.Point(197, 215);
+			this.textBox4.Location = new System.Drawing.Point(260, 210);
 			this.textBox4.Name = "textBox4";
 			this.textBox4.Size = new System.Drawing.Size(193, 20);
 			this.textBox4.TabIndex = 78;
@@ -646,9 +647,9 @@
 			// label6
 			// 
 			this.label6.AutoSize = true;
-			this.label6.BackColor = System.Drawing.Color.LavenderBlush;
+			this.label6.BackColor = System.Drawing.Color.LightBlue;
 			this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-			this.label6.Location = new System.Drawing.Point(82, 210);
+			this.label6.Location = new System.Drawing.Point(145, 205);
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(86, 25);
 			this.label6.TabIndex = 77;
@@ -657,7 +658,7 @@
 			// textBox3
 			// 
 			this.textBox3.BackColor = System.Drawing.Color.BlanchedAlmond;
-			this.textBox3.Location = new System.Drawing.Point(197, 172);
+			this.textBox3.Location = new System.Drawing.Point(260, 167);
 			this.textBox3.Name = "textBox3";
 			this.textBox3.Size = new System.Drawing.Size(193, 20);
 			this.textBox3.TabIndex = 76;
@@ -665,7 +666,7 @@
 			// textBox2
 			// 
 			this.textBox2.BackColor = System.Drawing.Color.BlanchedAlmond;
-			this.textBox2.Location = new System.Drawing.Point(197, 129);
+			this.textBox2.Location = new System.Drawing.Point(260, 124);
 			this.textBox2.Name = "textBox2";
 			this.textBox2.Size = new System.Drawing.Size(193, 20);
 			this.textBox2.TabIndex = 75;
@@ -673,7 +674,7 @@
 			// textBox1
 			// 
 			this.textBox1.BackColor = System.Drawing.Color.BlanchedAlmond;
-			this.textBox1.Location = new System.Drawing.Point(197, 91);
+			this.textBox1.Location = new System.Drawing.Point(260, 86);
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(193, 20);
 			this.textBox1.TabIndex = 74;
@@ -681,9 +682,9 @@
 			// label4
 			// 
 			this.label4.AutoSize = true;
-			this.label4.BackColor = System.Drawing.Color.LavenderBlush;
+			this.label4.BackColor = System.Drawing.Color.LightBlue;
 			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-			this.label4.Location = new System.Drawing.Point(126, 124);
+			this.label4.Location = new System.Drawing.Point(189, 119);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(52, 25);
 			this.label4.TabIndex = 73;
@@ -692,9 +693,9 @@
 			// label3
 			// 
 			this.label3.AutoSize = true;
-			this.label3.BackColor = System.Drawing.Color.LavenderBlush;
+			this.label3.BackColor = System.Drawing.Color.LightBlue;
 			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-			this.label3.Location = new System.Drawing.Point(82, 166);
+			this.label3.Location = new System.Drawing.Point(145, 161);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(96, 25);
 			this.label3.TabIndex = 72;
@@ -703,9 +704,9 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.BackColor = System.Drawing.Color.LavenderBlush;
+			this.label1.BackColor = System.Drawing.Color.LightBlue;
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(52, 86);
+			this.label1.Location = new System.Drawing.Point(115, 81);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(126, 25);
 			this.label1.TabIndex = 71;
@@ -727,6 +728,8 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.Color.LightSalmon;
+			this.BackgroundImage = global::ArtBazaar.Properties.Resources.Miller_wallpaper_1_10241;
 			this.ClientSize = new System.Drawing.Size(668, 375);
 			this.Controls.Add(this.comboBox1);
 			this.Controls.Add(this.label9);
@@ -739,8 +742,9 @@
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.Button3);
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "Form7";
-			this.Text = "Form7";
+			this.Text = "Ispuni korisničke podatke";
 			this.Load += new System.EventHandler(this.Form7_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();

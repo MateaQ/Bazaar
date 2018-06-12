@@ -63,6 +63,9 @@ namespace ArtBazaar
 			Form4 f4 = new Form4();
 			f4.Show();
 			this.Hide();
+
+
+
 		}
 
 #pragma warning disable IDE1006 // Naming Styles
@@ -186,6 +189,16 @@ DataGridViewImageColumn Slika = new DataGridViewImageColumn();
 		{
 
 		}
+
+		public void Brisanje(object sender, EventArgs e)
+		{
+			
+
+		}
+
+
+
+
 	}
 }
 
