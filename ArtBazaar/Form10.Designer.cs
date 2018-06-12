@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form10));
 			this.comboBox2 = new System.Windows.Forms.ComboBox();
 			this.comboBox1 = new System.Windows.Forms.ComboBox();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -262,6 +263,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackgroundImage = global::ArtBazaar.Properties.Resources.Miller_wallpaper_1_10241;
 			this.ClientSize = new System.Drawing.Size(684, 472);
 			this.Controls.Add(this.comboBox2);
 			this.Controls.Add(this.comboBox1);
@@ -280,6 +282,7 @@
 			this.Controls.Add(this.label4);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label1);
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "Form10";
 			this.Text = "Dodaj skulpturu";
 			this.Load += new System.EventHandler(this.Form10_Load);

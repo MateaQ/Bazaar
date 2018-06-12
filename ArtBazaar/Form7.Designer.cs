@@ -730,7 +730,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.LightSalmon;
 			this.BackgroundImage = global::ArtBazaar.Properties.Resources.Miller_wallpaper_1_10241;
-			this.ClientSize = new System.Drawing.Size(668, 375);
+			this.ClientSize = new System.Drawing.Size(669, 378);
 			this.Controls.Add(this.comboBox1);
 			this.Controls.Add(this.label9);
 			this.Controls.Add(this.textBox4);
