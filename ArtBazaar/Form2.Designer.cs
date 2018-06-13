@@ -144,6 +144,7 @@
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(193, 20);
 			this.textBox1.TabIndex = 24;
+			this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
 			// 
 			// textBox3
 			// 

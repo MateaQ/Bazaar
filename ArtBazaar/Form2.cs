@@ -27,8 +27,10 @@ namespace ArtBazaar
 
 		private void Button1_Click(object sender, EventArgs e)
 		{
+			
 
-			if (textBox4.Text == textBox5.Text)
+			if (textBox4.Text == textBox5.Text && textBox1.Text.Length > 0 && textBox2.Text.Length > 0 && textBox3.Text.Length > 0 && textBox4.Text.Length > 0 && textBox5.Text.Length > 0)
+			
 			{
 				SqlConnection con = Getcon();
 
@@ -44,13 +46,19 @@ namespace ArtBazaar
 				f4.Show();
 				this.Hide();
 			}
+
 			else
 			{
-				MessageBox.Show("Krivi unos ! Lozinke se ne podudaraju !");
+				MessageBox.Show("Krivi unos ! Lozinke se ne podudaraju !Ili niste upisali sve vrijdnosti!");
 			}
-			
 
-			
+		
+
+
+
+
+
+
 
 		}
 
@@ -84,6 +92,11 @@ namespace ArtBazaar
 		}
 
 		private void TextBox4_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		public void TextBox1_TextChanged(object sender, EventArgs e)
 		{
 
 		}

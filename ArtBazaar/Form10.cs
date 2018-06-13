@@ -78,6 +78,7 @@ namespace ArtBazaar
 
 
 			Form8 f8 = new Form8();
+
 			f8.Show();
 			this.Hide();
 		}
